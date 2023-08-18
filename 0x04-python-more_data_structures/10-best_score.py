@@ -1,0 +1,6 @@
+#!/usr/bin/python3
+def best_score(a_dictionary):
+    if a_dictionary:
+        srt = sorted(a_dictionary.items(), key= lambda x: x[1], reverse = True)
+        return srt[0][0]
+    return None
