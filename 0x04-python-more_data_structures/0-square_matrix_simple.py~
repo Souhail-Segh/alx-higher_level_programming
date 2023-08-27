@@ -1,0 +1,14 @@
+#!/usr/bin/python3
+def square_matrix_simple(matrix=[]):
+    matrice = []
+    if matrix:
+        for m in matrix:
+            if type(m) == type(list):
+                row = []
+                for f in m:
+                    r = m ** 2
+                    row.append(r)
+                matrice.append(row)
+            else:
+                matrice.append(m ** 2)
+    return matrice
