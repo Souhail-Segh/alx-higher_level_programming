@@ -1,14 +1,11 @@
 #!/usr/bin/python3
 def safe_print_list(my_list=[], x=0):
-    text = ""
+    sum = 0
     try:
         for i in range(x):
-            text += str(my_list[i])
-        print(text)
-        return x
-    except:
-        sum = 0
-        for i in my_list:
+            print('{}'.format(my_list[i]), end= '')
             sum += 1
-        print(text)
-        return sum
+    except:
+        pass
+    print()
+    return sum
