@@ -17,4 +17,4 @@ class Square:
             None
 
         """
-        self.__dict__ = {}
+        pass
