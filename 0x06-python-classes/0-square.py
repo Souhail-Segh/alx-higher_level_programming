@@ -1,20 +1,7 @@
 #!/usr/bin/python3
+
+"""Define a class Square."""
+
 class Square:
-    """ Class of square
-    Attributes:
-        __init__(): initialise the Class
-
-    Todo:
-        Get an empty dict
-    """
-    def __init__(self):
-        """Function  that  give  square
-
-        Args:
-            __dict__: empty dictionary
-
-        Return:
-            None
-
-        """
-        pass
+    """Represent a square."""
+    pass
