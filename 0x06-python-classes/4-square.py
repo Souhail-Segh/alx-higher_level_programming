@@ -32,8 +32,6 @@ class Square:
         elif siz < 0:
             raise ValueError("size must be >= 0")
         self.__size = siz
-        print('what here is a size:', self.__size)
-        print(type(self.__size))
 
     def area(self):
         """Calculate Square Area.
