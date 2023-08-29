@@ -7,40 +7,26 @@ class Square:
     """ Square Reprentation. """
 
     def __init__(self, size=0):
-        """Initialize a square.
+        """Initialize a new square.
 
         Args:
-            size (int): size of new square
+            size (int): The size of the new square.
         """
-
-        if not isinstance(size, int):
-            raise TypeError("size must be an integer")
-        elif size < 0:
-            raise ValueError("size must be >= 0")
-        else:
-            self.__size = size
+        self.size = size
 
     @property
     def size(self):
-        """Return size. """
-        return self.__size
+        """Get/set the current size of the square."""
+        return (self.__size)
 
     @size.setter
-    def size(self, siz):
-        if not isinstance(siz, int):
+    def size(self, value):
+        if not isinstance(value, int):
             raise TypeError("size must be an integer")
-        elif siz < 0:
+        elif value < 0:
             raise ValueError("size must be >= 0")
-        self.__size = siz
+        self.__size = value
 
     def area(self):
-        """Calculate Square Area.
-
-        Args:
-            area (int): the area of a square
-
-        Return:
-            int: the area of the square
-        """
-
-        return self.__size ** 2
+        """Return the current area of the square."""
+        return (self.__size * self.__size)
