@@ -1,6 +1,15 @@
 #!/usr/bin/python3
+''' Function that add two integers. '''
+
+
 def add_integer(a, b=98):
-    ''' Function that add two integers. '''
+    """Return the integer addition of a and b.
+
+    Float arguments are typecasted to ints before addition is performed.
+
+    Raises:
+        TypeError: If either of a or b is a non-integer and non-float.
+    """
 
     if not (isinstance(a, int) or isinstance(a, float)) \
        or isinstance(a, bool):
