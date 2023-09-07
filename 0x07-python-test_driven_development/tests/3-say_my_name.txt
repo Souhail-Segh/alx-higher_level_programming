@@ -11,8 +11,8 @@ My name is Souhail Segh
 
 --------------------------------------------------------------------------------
 test if one arg and a str:
->>> say_my_name('Souhail')
-My name is Souhail
+>>> say_my_name('Bob')
+My name is Bob
 
 --------------------------------------------------------------------------------
 test if one arg and not a str:
