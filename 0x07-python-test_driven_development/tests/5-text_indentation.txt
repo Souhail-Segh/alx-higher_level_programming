@@ -1,0 +1,50 @@
+__________________________________________________
+Task 5
+-------------------------------------------------
+
+Initialisation
+-----------------------------
+>>> text_indentation = __import__('5-text_indentation').text_indentation
+
+
+Test if str without separetor
+-----------------------------
+>>> text_indentation('Hello, how are you!')
+Hello, how are you!
+
+Test if str with one sep
+------------------------------
+>>> text_indentation('Hello? how are you!')
+Hello?
+how are you!
+
+Test if str with two sep, last at the end
+------------------------------
+>>> text_indentation('Hello? how are you.')
+Hello?
+how are you.
+
+Test if str with two sep, last not at the end
+------------------------------
+>>> text_indentation('Hello? how are. you')
+Hello?
+how are.
+you
+
+Test if no arg
+------------------------------
+>>> text_indentation()
+Traceback (most recent call last):
+...
+TypeError: text_indentation() missing 1 required positional argument: 'text'
+
+Test if other type
+------------------------------
+>>> text_indentation(None)
+Traceback (most recent call last):
+...
+TypeError: text must be a string
+
+Test if empty string: ''
+------------------------------
+>>> text_indentation('')
