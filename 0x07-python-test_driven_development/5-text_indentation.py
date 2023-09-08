@@ -1,6 +1,7 @@
 #!/usr/bin/python3
 ''' separet a text in lines '''
 
+
 def text_indentation(text):
     ''' a function that do str separation after each (.,?,:) by 2 lines.
     Args:
@@ -16,8 +17,8 @@ def text_indentation(text):
         start = 0
         sub = ''
         for i in range(len(text)):
-            if text[i] in ['.','?',':']:
-                sub = text[start : i + 1]
+            if text[i] in ['.', '?', ':']:
+                sub = text[start:i + 1]
                 sub = sub.strip()
                 start = i + 1
                 print(sub)
