@@ -2,4 +2,4 @@
 def lookup(obj):
     ''' look up for attributes and methods of an object. '''
 
-    return(list(vars(obj)))
+    return(dir(obj))
