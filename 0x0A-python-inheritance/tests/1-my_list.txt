@@ -21,3 +21,13 @@ Add values
 Test Sorting
 >>> my_list.print_sorted()
 [3, 5, 7]
+
+Length Test
+>>> len(my_list)
+3
+
+Remove last item
+>>> my_list.pop()
+7
+>>> print(my_list)
+[5, 3]
