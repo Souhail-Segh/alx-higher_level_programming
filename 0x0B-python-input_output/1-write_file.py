@@ -4,8 +4,5 @@
 
 def write_file(filename="", text=""):
     """Print the contents of a text file with UTF8 encoding."""
-    try:
-        with open(filename, "w", encoding="utf-8") as f:
-            print(f.read(), end="")
-    except:
-        pass
+    with open(filename, "w", encoding="utf-8") as f:
+        print(f.read(), end="")
