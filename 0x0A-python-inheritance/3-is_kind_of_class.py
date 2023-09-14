@@ -4,8 +4,7 @@ Function that check is one obj is instance of another obj
 '''
 
 
-def is_same_class(obj, a_class):
+def is_kind_of_class(obj, a_class):
     ''' isinstance function '''
-    if (type(a_class) == obj):
-        return True
-    return False
+
+    return (isinstance(obj, a_class))
