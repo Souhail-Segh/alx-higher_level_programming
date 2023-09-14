@@ -5,4 +5,6 @@ Empty class
 
 
 class BaseGeometry:
-    pass
+    ''' initialise empty class. '''
+    def __init__(self):
+        pass
