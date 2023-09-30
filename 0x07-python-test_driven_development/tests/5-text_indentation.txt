@@ -11,26 +11,26 @@ Test if str without separetor
 -----------------------------
 >>> text_indentation('Hello, how are you!')
 Hello, how are you!
-
+>>>
 Test if str with one sep
 ------------------------------
 >>> text_indentation('Hello? how are you!')
 Hello?
 how are you!
-
+>>>
 Test if str with two sep, last at the end
 ------------------------------
 >>> text_indentation('Hello? how are you.')
 Hello?
 how are you.
-
+>>>
 Test if str with two sep, last not at the end
 ------------------------------
 >>> text_indentation('Hello? how are. you')
 Hello?
 how are.
 you
-
+>>>
 Test if no arg
 ------------------------------
 >>> text_indentation()
