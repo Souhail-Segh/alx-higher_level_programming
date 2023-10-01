@@ -31,3 +31,12 @@ class TestIntegerMethods(unittest.TestCase):
 
         with self.assertRaises(TypeError):
             max_integer([1, '2', False])
+
+    def test_max_first_element(self):
+        self.assertEqual(max_integer([5, 1, 3]), 5)
+
+    def test_one_negatif(self):
+        self.assertEqual(max_integer([4, -1, 0]), 4)
+
+    def test_all_negatives(self):
+        self.assertEqual(max_integer([-3, -5, -7]), -3)
