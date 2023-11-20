@@ -1,13 +1,12 @@
 #!/usr/bin/python3
 """ lists all states from hbtn_0e_0_usa database """
-import mysql.connector
+import MySQLdb
 import sys
 
 if __name__ == '__main__':
     ''' The follow code will not be exuceted when imported '''
-    import mysql.connector
-
-    conn = mysql.connector.connect(host="localhost",
+    print(sys.argv[1])
+    conn = MySQLdb.connect(host="localhost",
                                    port=3306, user= sys.argv[1],
                                    passwd= sys.argv[2], db=sys.argv[3],
                                    charset="utf8")
